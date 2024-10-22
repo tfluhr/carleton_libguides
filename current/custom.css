@@ -1,0 +1,31 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+
+body {
+font-family: Montserrat;
+}
+
+footer h6 {
+    color: #FFD24F;
+
+}
+
+/* Modify the background color */
+.navbar-custom {
+    background-color: #0b5091;
+}
+
+@media only screen and (max-width: 600px) {
+ {
+
+  }
+}
+
+/*Below removes the springshare footer from view*/
+#s-lib-footer-public {
+display: none;
+}
+
+</style>
