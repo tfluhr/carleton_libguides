@@ -1,0 +1,181 @@
+<script type="text/javascript">
+function searchPrimo() {
+document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value;
+document.forms["searchForm"].submit();
+}
+</script>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0b5091;">
+
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://carleton.edu/library"><img src ="https://d2jv02qf7xgjwx.cloudfront.net/accounts/416560/images/Laurence_Mckinley_Gould_Library_Unit_Lockup__LEFT_WHITE.png" style="height:100px" ></img></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link2</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown3
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" id="simple" name="searchForm" method="get" target="_blank" action="https://bridge.primo.exlibrisgroup.com/discovery/search" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
+<input type="hidden" name="vid" value="01BRC_INST:CCO">
+<input type="hidden" name="tab" value="Everything">
+<input type="hidden" name="search_scope" value="CCO_MyCampus_PCI">
+<input type="hidden" name="lang" value="en">
+<!-- input type="hidden" name="pcAvailability" value="true" >
+<!-- Fixed parameters -->
+<input type="hidden" name="query" id="primoQuery" >
+<input type="text" id="primoQueryTemp" placeholder="   Search Catalyst" value="">
+<!-- Search Button -->
+<input id="go" title="Search" onclick="searchPrimo()" type="button" value="Search" alt="Search">
+</form>
+
+    </div>
+  </div>
+</nav>
+ 
+Footer
+Enter HTML to be inserted within the <footer> tag.
+HTML Code
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #0b5091;"
+          >
+    <!-- Grid container -->
+    <div class="container-fluid p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Laurence Gould McKinley Library
+            </h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Library Hours</h6>
+          <pre>
+<b>Monday-Thursday:</b>
+8am - midnight
+<b>Friday:</b>
+8am - 11pm
+<b>Saturday:</b> 
+10am - 11pm
+<b>Sunday:</b> 
+10am - midnight
+</pre>
+<br />
+</div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Helpful Links
+            </h6>
+            <p>
+              <a href ="https://bridge.primo.exlibrisgroup.com/discovery/account?vid=01BRC_INST:CCO&section=overview&lang=en" class="text-white">Your Library Account</a>
+            </p>
+             <p>
+              <a href="https://www.carleton.edu/library/help/services/ill/" class="text-white">InterLibrary Loan</a>
+            </p>
+            <p>
+              <a href="https://www.carleton.edu/library/faq/" class="text-white">Frequently Asked Questions</a>
+            </p>
+            <p>
+              <a href="https://moodle.carleton.edu/"class="text-white">Moodle</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p>405 Gould Lane, Northfield, MN 55057</p>
+            <p>library@carleton.edu</p>
+            <p>507.222.4260</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+  
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-facebook-f"></i
+              ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
