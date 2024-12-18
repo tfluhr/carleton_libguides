@@ -5,7 +5,7 @@ import requests, datetime
 def get_access_token():
     payload = {'client_id': '1718',  ### this is Carleton's SpringShare Suite ID
                'grant_type': 'client_credentials',
-               'client_secret': '9286f3d7bc70e56652dfe0404dac4f36'  ### this is the read only api secret
+               'client_secret': 'API KEY HERE'  ### this is the read only api secret
                }
     response = requests.post('https://carleton.libcal.com/api/1.1/oauth/token', data=payload)
     access_token = (response.json()['access_token'])
